@@ -22,9 +22,9 @@ jobs:
 
       - name: Run Sync Script
         env:
-          CANVAS_API_KEY: ${{ secrets.CANVAS_API_KEY }}
-          CANVAS_URL: ${{ secrets.CANVAS_URL }}
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          CANVAS_API_URL: ${{ secrets.CANVAS_URL }}
+          CANVAS_API: ${{ secrets.CANVAS_API_KEY }}
+          NOTION_API: ${{ secrets.NOTION_API_KEY }}
+          NOTION_PAGE: ${{ secrets.NOTION_DATABASE_ID }}
           NOTION_DATABASE: 'invalid'
         run: node src/main.js
