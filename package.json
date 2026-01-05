@@ -1,11 +1,10 @@
 {
   "name": "canvas-notion-integration",
   "version": "1.0.0",
-  "description": "Integrate Canvas assignments into Notion",
   "main": "src/main.js",
   "dependencies": {
-    "@notionhq/client": "^2.2.17",
-    "canvas-api-ts": "^1.0.10",
+    "@notionhq/client": "^2.2.15",
+    "canvas-api-ts": "0.6.1",
     "dotenv": "^16.4.7",
     "html-to-notion": "^0.2.1"
   }
