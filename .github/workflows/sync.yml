@@ -12,13 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.10'
+          node-version: '20'
 
       - name: Install dependencies
-        run: pip install canvasapi notion-client pytz
+        run: npm install
 
       - name: Run Sync Script
         env:
@@ -26,5 +26,5 @@ jobs:
           CANVAS_URL: ${{ secrets.CANVAS_URL }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-        run: python canvas_notion_integration/main.py
+        run: node src/main.js
         
