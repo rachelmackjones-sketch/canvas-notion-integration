@@ -8,5 +8,5 @@
     "canvas-api-ts": "^1.0.10",
     "dotenv": "^16.4.7",
     "html-to-notion": "^0.2.1"
-  },
+  }
 }
